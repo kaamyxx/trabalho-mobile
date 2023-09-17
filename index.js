@@ -1,12 +1,8 @@
-const express = require('express');
-const app = express();
+const server = require("./server");
 
-const routes = require ('./src/routes/routes');
+const port = 8080
 
-app.use('/'. routes);
+server.listen(port, () =>{
+    console.log(`server running on port ${port}`)
 
-
-app.listen(3000,()=>{
-    const id = req.params.id;
-    console.log('servidor funcinando');
-});
+}) 
