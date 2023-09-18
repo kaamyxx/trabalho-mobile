@@ -27,7 +27,7 @@ const NasaItem = ({nasa}) => {
     )
 }
 
-const NasaList = () => {
+const Home = () => {
     const [nasa, setNasa] = useState()
 
     const fetchNasa = async () => {
@@ -40,7 +40,7 @@ const NasaList = () => {
     }
 
     useEffect(() => {
-        fetchUniversities()
+        fetchNasa()
     }, [])
 
     return (
@@ -55,4 +55,4 @@ const NasaList = () => {
     );
 }
 
-export default NasaList;
+export default Home;
